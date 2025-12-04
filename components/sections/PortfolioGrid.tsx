@@ -7,8 +7,8 @@ import { ArrowUpRight } from 'lucide-react';
 
 const portfolioItems = [
   {
-    title: 'Détails raffinés',
-    category: 'Event Photography',
+    title: 'Creative Agency',
+    category: 'Professional Videographer',
     description: 'Des moments capturés avec style et émotion.',
     image: '/image/AdobeStock_193389983.jpeg',
   },

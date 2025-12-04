@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const carouselImages = [
@@ -109,22 +110,26 @@ export default function CTA() {
 
           {/* CTA Buttons ultra minimalistes */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-8">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="group px-8 py-3.5 bg-neutral-900 text-white rounded-full text-[14px] font-medium hover:bg-neutral-800 transition-all duration-300 flex items-center gap-2 tracking-tight"
-            >
-              <span>Réserver une consultation</span>
-              <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" strokeWidth={2} />
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="group px-8 py-3.5 bg-neutral-900 text-white rounded-full text-[14px] font-medium hover:bg-neutral-800 transition-all duration-300 flex items-center gap-2 tracking-tight"
+              >
+                <span>Réserver une consultation</span>
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" strokeWidth={2} />
+              </motion.button>
+            </Link>
             
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-3.5 bg-transparent text-neutral-900 rounded-full text-[14px] font-medium hover:bg-neutral-50 transition-all duration-300 border border-neutral-200 tracking-tight"
-            >
-              Voir nos tarifs
-            </motion.button>
+            <Link href="/pricing">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-8 py-3.5 bg-transparent text-neutral-900 rounded-full text-[14px] font-medium hover:bg-neutral-50 transition-all duration-300 border border-neutral-200 tracking-tight"
+              >
+                Voir nos tarifs
+              </motion.button>
+            </Link>
           </div>
 
           {/* 5 étoiles + texte de confiance */}

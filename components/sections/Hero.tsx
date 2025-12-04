@@ -47,7 +47,7 @@ export default function Hero() {
                 transition={{ duration: 0.9, delay: 0.2, ease: [0.32, 0.72, 0, 1] }}
                 className="flex flex-col justify-center"
               >
-                {/* Label "Détails raffinés" - Petit gris clair */}
+                {/* Label "Creative Agency" - Petit gris clair */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -55,11 +55,11 @@ export default function Hero() {
                   className="mb-2 sm:mb-3"
                 >
                   <span className="text-[10px] sm:text-[11px] md:text-[12px] font-medium text-[#EFEFEF] tracking-[0.15em]">
-                    Détails raffinés
+                    Creative Agency
                   </span>
                 </motion.div>
 
-                {/* Grand titre "Event Photography" - Bold blanc */}
+                {/* Grand titre "Professional Videographer" - Bold blanc */}
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function Hero() {
                   className="text-[32px] sm:text-[42px] md:text-[56px] lg:text-[64px] xl:text-[72px] font-black text-white leading-[1.05] tracking-tight mb-3 sm:mb-4"
                   style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
                 >
-                  Event Photography
+                  Professional Videographer
                 </motion.h1>
 
                 {/* Description */}
