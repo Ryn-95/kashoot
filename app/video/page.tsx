@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, X } from 'lucide-react';
 
@@ -10,25 +9,21 @@ const videos = [
     id: 1,
     src: '/image/VIDEO1.mp4',
     title: 'Film de mariage',
-    thumbnail: '/image/DSC09330.jpg',
   },
   {
     id: 2,
     src: '/image/VIDEO2.mp4',
     title: 'Teaser mariage',
-    thumbnail: '/image/KASHOOT-40.jpg',
   },
   {
     id: 3,
     src: '/image/VIDEO3.mp4',
     title: 'Court métrage',
-    thumbnail: '/image/DSC07875.jpeg',
   },
   {
     id: 4,
     src: '/image/VIDEO11.mp4',
     title: 'Mariage',
-    thumbnail: '/image/IMG_4109.JPG',
   },
 ];
 
@@ -64,15 +59,28 @@ export default function VideoPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
-                className="group relative aspect-video overflow-hidden bg-neutral-100 cursor-pointer"
+                className="group relative aspect-video overflow-hidden bg-neutral-100 cursor-pointer rounded-lg"
                 onClick={() => setSelectedVideo(video.id)}
               >
-                <Image
-                  src={video.thumbnail}
-                  alt={video.title}
-                  fill
-                  className="object-cover transition-opacity duration-500 group-hover:opacity-80"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                {/* Video preview - Aperçu réel de la vidéo */}
+                <video
+                  src={video.src}
+                  preload="metadata"
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-80"
+                  onMouseEnter={(e) => {
+                    const videoEl = e.currentTarget;
+                    videoEl.currentTime = 1; // Afficher la frame à 1 seconde
+                    videoEl.play().catch(() => {
+                      // Ignorer les erreurs de lecture automatique
+                    });
+                  }}
+                  onMouseLeave={(e) => {
+                    const videoEl = e.currentTarget;
+                    videoEl.pause();
+                    videoEl.currentTime = 1; // Revenir à la frame d'aperçu
+                  }}
                 />
                 
                 {/* Overlay simple */}
@@ -80,13 +88,13 @@ export default function VideoPage() {
 
                 {/* Play button minimaliste */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                  <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:bg-white transition-colors duration-300 shadow-lg">
                     <Play size={20} className="text-neutral-900 ml-0.5" fill="currentColor" />
                   </div>
                 </div>
 
                 {/* Titre */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 via-black/40 to-transparent">
                   <h3 className="text-white text-lg font-light">
                     {video.title}
                   </h3>
