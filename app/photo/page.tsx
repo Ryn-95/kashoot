@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const photoImages = [
-  '/image/AdobeStock_228034444.jpeg',
+  '/image/AdobeStock_196920750.jpeg',
   '/image/image00035.jpg',
   '/image/AdobeStock_235776829.jpeg',
   '/image/A_90.jpg',

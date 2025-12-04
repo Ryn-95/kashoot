@@ -51,13 +51,13 @@ export default function Footer() {
             <h4 className="text-[10px] sm:text-[11px] font-semibold mb-4 sm:mb-5 md:mb-6 tracking-[0.15em] uppercase text-neutral-900">Contact</h4>
             <ul className="space-y-3 sm:space-y-4 text-[13px] sm:text-[14px] text-neutral-600">
               <li>
-                <a href="mailto:contact@kashoot.fr" className="hover:text-neutral-900 transition-all duration-300 hover:translate-x-1 inline-block font-light break-all">
-                  contact@kashoot.fr
+                <a href="mailto:kashootcorp@gmail.com" className="hover:text-neutral-900 transition-all duration-300 hover:translate-x-1 inline-block font-light break-all">
+                  kashootcorp@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+33612345678" className="hover:text-neutral-900 transition-all duration-300 hover:translate-x-1 inline-block font-light">
-                  +33 6 12 34 56 78
+                <a href="tel:0779570959" className="hover:text-neutral-900 transition-all duration-300 hover:translate-x-1 inline-block font-light">
+                  0779570959
                 </a>
               </li>
             </ul>

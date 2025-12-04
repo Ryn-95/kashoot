@@ -35,6 +35,7 @@ const services = [
       'Plans drone aériens',
       'Montage professionnel',
       'Livraison 4K',
+      'Video projection',
     ],
   },
   {
