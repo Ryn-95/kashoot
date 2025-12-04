@@ -43,32 +43,35 @@ export default function ContactPage() {
               quality={90}
             />
             
-            {/* Header et Formulaire par-dessus l'image */}
-            <div className="absolute inset-0 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 pt-12 sm:pt-16 md:pt-24 pb-6 sm:pb-8 md:pb-12">
+            {/* Header et Formulaire par-dessus l'image - Centered */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 pt-12 sm:pt-16 md:pt-20 pb-6 sm:pb-8 md:pb-12">
               {/* Header - Centered */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-center mb-4 sm:mb-5 md:mb-5 w-full px-4"
+                className="text-center mb-6 sm:mb-8 md:mb-10 w-full px-4"
               >
                 <p className="text-[11px] sm:text-[12px] md:text-[13px] text-white font-medium mb-3 sm:mb-4 tracking-wide uppercase">
                   Contact
                 </p>
-                <h1 className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] font-medium text-white mb-3 sm:mb-4 tracking-tight leading-[1.1]">
+                <h1 className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] font-medium text-white mb-4 sm:mb-5 tracking-tight leading-[1.1]">
                   Contactez-nous
                 </h1>
-                <p className="text-[13px] sm:text-[14px] md:text-[15px] text-white font-light max-w-[600px] mx-auto px-2">
+                <p className="text-[15px] sm:text-[16px] md:text-[17px] text-white font-medium max-w-[600px] mx-auto px-2 mb-2">
                   Envoyez votre demande, et recevez votre devis sous 24h.
+                </p>
+                <p className="text-[13px] sm:text-[14px] md:text-[15px] text-white/90 font-light max-w-[600px] mx-auto px-2">
+                  ⚡ Réponse garantie sous <span className="font-semibold text-white">7 heures</span> - Nous sommes là pour transformer votre rêve en réalité
                 </p>
               </motion.div>
 
-              {/* Form Card - Responsive */}
+              {/* Form Card - Responsive - Centered */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="w-full max-w-[550px] mx-auto px-4 sm:px-0 sm:ml-0 md:ml-8 lg:ml-16"
+                className="w-full max-w-[550px] mx-auto px-4 sm:px-6 md:px-8"
               >
                 <form onSubmit={handleSubmit} className="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl">
             <div className="space-y-4 sm:space-y-5">
@@ -152,15 +155,17 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* Submit Button */}
-              <motion.button
-                type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-neutral-900 text-white rounded-full text-[12px] sm:text-[13px] font-medium hover:bg-neutral-800 transition-colors mt-2"
-              >
-                Envoyer
-              </motion.button>
+              {/* Submit Button - Centered */}
+              <div className="flex justify-center mt-4">
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-3.5 bg-neutral-900 text-white rounded-full text-[13px] sm:text-[14px] font-medium hover:bg-neutral-800 transition-colors shadow-lg"
+                >
+                  Envoyer
+                </motion.button>
+              </div>
                 </div>
                 </form>
               </motion.div>

@@ -9,11 +9,9 @@ const photoImages = [
   '/image/image00035.jpg',
   '/image/AdobeStock_235776829.jpeg',
   '/image/A_90.jpg',
-  '/image/DSC05501.jpg',
   '/image/AdobeStock_235780957.jpeg',
   '/image/la-mariee-tient-un-bouquet-de-mariage-dans-ses-mains.jpg',
   '/image/AdobeStock_306789288.jpeg',
-  '/image/AdobeStock_228407537.jpeg',
   '/image/image00023.jpeg',
   '/image/IMG_4065.JPG',
   '/image/AdobeStock_235780655.jpeg',
@@ -29,7 +27,7 @@ const photoImages = [
   '/image/ceremonie-de-pose-de-la-bague-de-mariage-sur-le-doigt-de-la-mariee-a-l-exterieur.jpg',
   '/image/image00022.jpg',
   '/image/cartes-d-invitation-de-mariage-avec-des-fleurs-sur-la-table.jpg',
-  '/image/AdobeStock_228407485.jpeg',
+  '/image/DSC05501.jpg',
 ];
 
 export default function PhotoPage() {

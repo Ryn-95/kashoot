@@ -1,10 +1,22 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Check, ArrowRight, Sparkles } from 'lucide-react';
 
 const packs = [
+  {
+    name: 'Élégance discrète',
+    subtitle: '',
+    features: [
+      'Reportage photo & vidéo complet',
+      'Captation des moments forts',
+      'Retouches photos professionnelles',
+      'Film résumé (25 min à 1h)',
+      'Livraison via lien sécurisé',
+    ],
+  },
   {
     name: 'Essentiel',
     subtitle: 'Pour commencer',
@@ -134,14 +146,14 @@ export default function Pricing() {
               </ul>
 
               {/* CTA Button - Tesla/Apple style */}
-              <button className={`group/btn w-full py-4 rounded-2xl text-[15px] font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
+              <Link href="/contact" className={`group/btn w-full py-4 rounded-2xl text-[15px] font-medium transition-all duration-300 flex items-center justify-center gap-2 ${
                 pack.highlighted
                   ? 'bg-gray-900 text-white hover:bg-gray-800 shadow-lg shadow-gray-900/20'
                   : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
               }`}>
                 <span>Choisir {pack.name}</span>
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover/btn:translate-x-1" />
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -154,11 +166,14 @@ export default function Pricing() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 text-center"
         >
+          <p className="text-[13px] text-gray-500 mb-2">
+            Chaque pack peut être personnalisable selon vos besoins.
+          </p>
           <p className="text-[13px] text-gray-500">
             Besoin d'une formule sur mesure ?{' '}
-            <button className="text-gray-900 font-medium hover:underline">
+            <Link href="/contact" className="text-gray-900 font-medium hover:underline">
               Contactez-nous
-            </button>
+            </Link>
           </p>
         </motion.div>
       </div>
