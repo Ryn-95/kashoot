@@ -5,17 +5,15 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const photoImages = [
-  '/image/AdobeStock_196920750.jpeg',
+  '/image/A_134.jpg',
   '/image/image00035.jpg',
-  '/image/AdobeStock_235776829.jpeg',
   '/image/A_90.jpg',
   '/image/AdobeStock_235780957.jpeg',
   '/image/la-mariee-tient-un-bouquet-de-mariage-dans-ses-mains.jpg',
-  '/image/AdobeStock_306789288.jpeg',
+  '/image/A_118.jpg',
   '/image/image00023.jpeg',
   '/image/IMG_4065.JPG',
   '/image/AdobeStock_235780655.jpeg',
-  '/image/AdobeStock_236366436.jpeg',
   '/image/AdobeStock_243451238.jpeg',
   '/image/image00029.jpg',
   '/image/image00001.jpg',
@@ -24,10 +22,11 @@ const photoImages = [
   '/image/image00036.jpg',
   '/image/AdobeStock_174469948.jpeg',
   '/image/AdobeStock_235780446.jpeg',
-  '/image/ceremonie-de-pose-de-la-bague-de-mariage-sur-le-doigt-de-la-mariee-a-l-exterieur.jpg',
-  '/image/image00022.jpg',
-  '/image/cartes-d-invitation-de-mariage-avec-des-fleurs-sur-la-table.jpg',
+  '/image/A_133.jpg',
+  '/image/A_117.jpg',
+  '/image/A_132.jpg',
   '/image/DSC05501.jpg',
+  '/image/AdobeStock_235776829.jpeg',
 ];
 
 export default function PhotoPage() {

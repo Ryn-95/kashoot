@@ -7,19 +7,19 @@ const testimonials = [
   {
     quote: "Un souvenir qui nous émeut à chaque fois",
     description: "Les images sont magnifiques, sincères, et chaque plan nous replonge dans ce jour parfait. L'équipe a su capturer notre histoire avec une sensibilité rare.",
-    author: "Sofia & Malik",
+    author: "J&S",
     location: "Paris",
   },
   {
     quote: "Un film de mariage digne du cinéma",
     description: "Chaque scène raconte une émotion. Le rendu final dépasse tout ce qu'on espérait. Un travail d'une qualité exceptionnelle.",
-    author: "Lina & Thomas",
+    author: "I&D",
     location: "Chantilly",
   },
   {
     quote: "Une équipe à l'écoute et passionnée",
     description: "Présents sans jamais déranger, ils ont capturé chaque instant avec talent et discrétion. Un professionnalisme remarquable.",
-    author: "Mariam & Youssef",
+    author: "P&C",
     location: "Founder",
   },
 ];

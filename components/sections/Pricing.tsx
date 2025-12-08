@@ -7,17 +7,6 @@ import { Check, ArrowRight, Sparkles } from 'lucide-react';
 
 const packs = [
   {
-    name: 'Élégance discrète',
-    subtitle: '',
-    features: [
-      'Reportage photo & vidéo complet',
-      'Captation des moments forts',
-      'Retouches photos professionnelles',
-      'Film résumé (25 min à 1h)',
-      'Livraison via lien sécurisé',
-    ],
-  },
-  {
     name: 'Essentiel',
     subtitle: 'Pour commencer',
     features: [

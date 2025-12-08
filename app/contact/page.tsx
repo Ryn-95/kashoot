@@ -35,7 +35,7 @@ export default function ContactPage() {
         <div className="relative rounded-[20px] sm:rounded-[24px] md:rounded-[32px] overflow-hidden">
           <div className="relative w-full h-[800px] sm:h-[900px] md:h-[1100px] lg:h-[1200px]">
             <Image
-              src="/image/AdobeStock_228034341.jpeg"
+              src="/image/cartes-d-invitation-de-mariage-avec-des-fleurs-sur-la-table.jpg"
               alt="Beach wedding background"
               fill
               className="object-cover"
@@ -59,10 +59,7 @@ export default function ContactPage() {
                   Contactez-nous
                 </h1>
                 <p className="text-[15px] sm:text-[16px] md:text-[17px] text-white font-medium max-w-[600px] mx-auto px-2 mb-2">
-                  Envoyez votre demande, et recevez votre devis sous 24h.
-                </p>
-                <p className="text-[13px] sm:text-[14px] md:text-[15px] text-white/90 font-light max-w-[600px] mx-auto px-2">
-                  ⚡ Réponse garantie sous <span className="font-semibold text-white">7 heures</span> - Nous sommes là pour transformer votre rêve en réalité
+                  Envoyez votre demande, et recevez votre devis en moins de 7 heures.
                 </p>
               </motion.div>
 

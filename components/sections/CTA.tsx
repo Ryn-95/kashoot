@@ -7,18 +7,11 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const carouselImages = [
-  '/image/A_263.jpg',
-  '/image/DSC09329.jpg',
-  '/image/IMG_4096.JPG',
-  '/image/AdobeStock_235776848.jpeg',
-  '/image/DSC05761.jpg',
-  '/image/A_221.jpg',
-  '/image/A_245.jpg',
-  '/image/DSC07875.jpeg',
-  '/image/KASHOOT-40.jpg',
-  '/image/DSC09525.jpg',
-  '/image/A_547.jpg',
-  '/image/IMG_4078.JPG',
+  '/image/AdobeStock_145421520.jpeg',
+  '/image/image00016.jpg',
+  '/image/AdobeStock_243451238.jpeg',
+  '/image/image00012.jpg',
+  '/image/image00003.jpg',
 ];
 
 export default function CTA() {

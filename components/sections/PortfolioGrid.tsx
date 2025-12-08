@@ -22,7 +22,7 @@ const portfolioItems = [
     title: 'Élégance discrète',
     category: 'Event Photography',
     description: 'Des instants simples, purs et raffinés.',
-    image: '/image/AdobeStock_411757637.jpeg',
+    image: '/image/DSC09525.jpg',
   },
   {
     title: 'Lumière urbaine',

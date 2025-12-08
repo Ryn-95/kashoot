@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const galleryImages = [
-  '/image/KASHOOT-40.jpg',
-  '/image/DSC09525.jpg',
+  '/image/A_115.jpg',
+  '/image/A_116.jpg',
   '/image/A_547.jpg',
   '/image/IMG_4078.JPG',
   '/image/AdobeStock_228034444.jpeg',

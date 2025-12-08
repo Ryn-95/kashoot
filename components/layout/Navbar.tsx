@@ -93,7 +93,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden fixed top-20 left-3 right-3 bg-black/98 backdrop-blur-xl rounded-2xl border border-black/20 shadow-2xl p-6 z-40"
+            className="md:hidden fixed top-20 left-3 right-3 bg-black/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl p-6 z-40"
           >
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link, index) => (
@@ -101,7 +101,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-white/90 hover:text-white transition-colors text-[15px] font-medium py-2"
+                  className="text-white hover:text-gray-300 transition-colors text-[16px] font-medium py-2 border-b border-white/10 last:border-0"
                 >
                   {link.name}
                 </Link>
