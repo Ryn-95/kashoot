@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const photoImages = [
-  '/image/A_134.jpg',
+  '/image/image00004 copy.jpg',
   '/image/image00035.jpg',
-  '/image/A_90.jpg',
+  '/image/image/AdobeStock_82364817.jpeg',
   '/image/AdobeStock_235780957.jpeg',
   '/image/la-mariee-tient-un-bouquet-de-mariage-dans-ses-mains.jpg',
-  '/image/A_118.jpg',
+  '/image/image/AdobeStock_172789760 (1).jpeg',
   '/image/image00023.jpeg',
   '/image/IMG_4065.JPG',
   '/image/AdobeStock_235780655.jpeg',
@@ -22,7 +22,7 @@ const photoImages = [
   '/image/image00036.jpg',
   '/image/AdobeStock_174469948.jpeg',
   '/image/AdobeStock_235780446.jpeg',
-  '/image/A_133.jpg',
+  '/image/image/AdobeStock_277379051.jpeg',
   '/image/A_117.jpg',
   '/image/A_132.jpg',
   '/image/DSC05501.jpg',

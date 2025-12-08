@@ -22,9 +22,6 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="text-[13px] sm:text-[14px] md:text-[15px] text-neutral-600 leading-relaxed max-w-sm font-light">
-              Films de mariage haut de gamme
-            </p>
           </div>
 
           {/* Navigation épurée */}
@@ -33,9 +30,9 @@ export default function Footer() {
             <ul className="space-y-3 sm:space-y-4">
               {[
                 { name: 'Accueil', href: '/' },
-                { name: 'Services', href: '/services' },
                 { name: 'Photo', href: '/photo' },
                 { name: 'Vidéo', href: '/video' },
+                { name: 'Services', href: '/services' },
                 { name: 'Contact', href: '/contact' },
               ].map((link) => (
                 <li key={link.name}>
@@ -75,16 +72,6 @@ export default function Footer() {
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-neutral-300 flex items-center justify-center hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group"
               >
                 <Instagram size={16} className="sm:w-[18px] sm:h-[18px] transition-transform group-hover:scale-110" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-neutral-300 flex items-center justify-center hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-[18px] sm:h-[18px] transition-transform group-hover:scale-110">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
-                </svg>
               </a>
             </div>
           </div>

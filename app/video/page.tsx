@@ -15,16 +15,6 @@ const videos = [
     src: '/image/VIDEO2.mp4',
     title: 'Teaser mariage',
   },
-  {
-    id: 3,
-    src: '/image/VIDEO3.mp4',
-    title: 'Court métrage',
-  },
-  {
-    id: 4,
-    src: '/image/VIDEO11.mp4',
-    title: 'Mariage',
-  },
 ];
 
 export default function VideoPage() {
